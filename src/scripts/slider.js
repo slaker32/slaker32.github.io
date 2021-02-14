@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded',()=> {
         }
         listenResize(){
             const elemWidth = this.sliderWrapper.offsetWidth / this.state.showSlides
-            this.state.elemWidth = Math.ceil(elemWidth)
+            this.state.elemWidth = Math.floor(elemWidth)
             this.slides.forEach((elem) => {
                 elem.style.width = `${this.state.elemWidth}px`
             })
